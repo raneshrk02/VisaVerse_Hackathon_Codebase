@@ -757,8 +757,8 @@ We welcome contributions in:
 
 **Development Setup:**
 ```bash
-git clone https://github.com/raneshrk02/VisaVerse_Submission.git
-cd VisaVerse_Submission
+git clone https://github.com/raneshrk02/VisaVerse_Hackathon_Codebase.git
+cd VisaVerse_Hackathon_Codebase
 # Backend: cd backend && pip install -r requirements.txt && python main.py
 # Frontend: cd frontend && npm install && npm run dev
 ```
