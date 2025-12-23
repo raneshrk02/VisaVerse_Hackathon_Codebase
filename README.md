@@ -796,4 +796,4 @@ In a world where AI increasingly drives opportunity, SAGE ensures connectivity i
 
 ---
 
-*"The best AI works when you need it most—even when the world is disconnected."*
+*"The best AI works when you need it most-even when the world is disconnected."*
