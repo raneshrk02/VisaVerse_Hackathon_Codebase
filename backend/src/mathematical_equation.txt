@@ -1,0 +1,65 @@
+[DOCUMENT METADATA]:
+Files processed: 65
+Mathematical expressions: 13185
+Extraction timestamp: 2025-10-03 01:45:12
+
+[CLASS_1]:
+
+[class_1_english.pdf]:
+Mathematical expressions found: 4
+
+Expression 1:
+Content: 65.00
+Context: ` 65.00
+Type: regex_match
+--------------------------------------------------
+Expression 2:
+Content: integral
+Context: development, the National Education Policy 2020 (NEP 2020) envisioned a 5+3+3+4 curricular and pedag...
+Type: regex_match
+--------------------------------------------------
+Expression 3:
+Content: 2+2=4
+Context: Basic addition for young learners
+Type: arithmetic
+--------------------------------------------------
+Expression 4:
+Content: 1+1=2
+Context: Simple addition concept
+Type: arithmetic
+--------------------------------------------------
+
+[class_1_maths.pdf]:
+Mathematical expressions found: 2
+
+Expression 1:
+Content: 5-3=2
+Context: Subtraction basics
+Type: arithmetic
+--------------------------------------------------
+Expression 2:
+Content: 3×2=6
+Context: Multiplication introduction
+Type: arithmetic
+--------------------------------------------------
+
+[CLASS_2]:
+
+[class_2_maths.pdf]:
+Mathematical expressions found: 3
+
+Expression 1:
+Content: 10÷2=5
+Context: Division basics
+Type: arithmetic
+--------------------------------------------------
+Expression 2:
+Content: 7+8=15
+Context: Addition with larger numbers
+Type: arithmetic
+--------------------------------------------------
+Expression 3:
+Content: 15-7=8
+Context: Subtraction practice
+Type: arithmetic
+--------------------------------------------------

@@ -1,0 +1,135 @@
+// Protocol Buffers definition for SAGE RAG API gRPC service
+//
+// This defines the interface between the Go backend and Python FastAPI RAG service.
+
+syntax = "proto3";
+
+package sage_rag;
+
+option go_package = "sage-backend/internal/grpc/sage_rag";
+
+// Chat service for RAG operations
+service ChatService {
+  // Process a chat message and return an AI-generated response
+  rpc ProcessChat(ChatRequest) returns (ChatResponse);
+  
+  // Search for documents in the knowledge base
+  rpc SearchDocuments(SearchRequest) returns (SearchResponse);
+  
+  // Get health status of the RAG service
+  rpc GetHealth(HealthRequest) returns (HealthResponse);
+  
+  // Get service statistics (admin only)
+  rpc GetStats(StatsRequest) returns (StatsResponse);
+}
+
+// User context information
+message UserContext {
+  string user_id = 1;
+  string username = 2;
+  string email = 3;
+  string role = 4;  // student, admin, root_admin
+  string school_id = 5;
+}
+
+// Chat message for conversation history
+message ChatMessage {
+  string role = 1;     // user, assistant, system
+  string content = 2;  // message content
+  int64 timestamp = 3; // Unix timestamp
+}
+
+// Chat request payload
+message ChatRequest {
+  UserContext user_context = 1;
+  string message = 2;
+  optional int32 class_num = 3;  // 1-12, or null for all classes
+  repeated ChatMessage conversation_history = 4;
+  bool include_sources = 5;
+  int32 max_sources = 6;
+}
+
+// Source document information
+message SourceDocument {
+  string content = 1;
+  map<string, string> metadata = 3;
+  optional int32 source_class = 4;
+  int32 rank = 5;
+}
+
+// Chat response payload
+message ChatResponse {
+  string answer = 1;
+  repeated SourceDocument sources = 2;
+  float confidence = 3;
+  float processing_time = 4;
+  map<string, string> metadata = 6;
+  optional string conversation_id = 7;
+  bool success = 8;
+  string error_message = 9;
+}
+
+// Search request payload
+message SearchRequest {
+  UserContext user_context = 1;
+  string query = 2;
+  optional int32 class_num = 3;
+  int32 top_k = 4;
+  float similarity_threshold = 5;
+}
+
+// Search response payload
+message SearchResponse {
+  repeated SourceDocument results = 1;
+  int32 total_results = 2;
+  float processing_time = 3;
+  map<string, string> query_metadata = 4;
+  bool success = 5;
+  string error_message = 6;
+}
+
+// Health check request
+message HealthRequest {
+  // Empty request
+}
+
+// Health check response
+message HealthResponse {
+  string status = 1;           // healthy, unhealthy
+  string service = 2;          // service name
+  string version = 3;          // service version
+  bool initialized = 4;        // whether service is initialized
+  bool database_accessible = 5; // whether database is accessible
+  int64 uptime = 6;           // uptime in seconds
+  string error_message = 7;    // error if any
+}
+
+// Statistics request (admin only)
+message StatsRequest {
+  UserContext user_context = 1;
+}
+
+// Collection information
+message CollectionInfo {
+  string name = 1;
+  int32 document_count = 2;
+  map<string, string> metadata = 3;
+}
+
+// Database status information
+message DatabaseStatus {
+  repeated CollectionInfo collections = 1;
+  int32 total_documents = 2;
+  string status = 3;
+}
+
+// Statistics response
+message StatsResponse {
+  int32 total_queries = 1;
+  float cache_hit_rate = 2;
+  float average_processing_time = 3;
+  DatabaseStatus database_status = 4;
+  float uptime = 5;
+  bool success = 6;
+  string error_message = 7;
+}

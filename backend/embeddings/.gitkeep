@@ -1,0 +1,2 @@
+# This file preserves the embeddings/ directory structure in git
+# The sentence transformer embedding model (67MB) is stored here but ignored by git

@@ -1,0 +1,2 @@
+# This file preserves the ncert_chromadb/ directory structure in git
+# The ChromaDB vector database (1.1GB) is stored here but ignored by git

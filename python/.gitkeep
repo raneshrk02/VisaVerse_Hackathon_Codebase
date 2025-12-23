@@ -1,0 +1,2 @@
+# This file preserves the python/ directory structure in git
+# The portable Python 3.13 runtime (2.3GB) is stored here but ignored by git

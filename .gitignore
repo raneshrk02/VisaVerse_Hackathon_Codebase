@@ -1,0 +1,183 @@
+# ========================================
+# SAGE Offline AI - Git Ignore
+# Note: Folders are tracked, but large binary files inside are ignored
+# ========================================
+
+# ----------------------------------------
+# Python Runtime & Dependencies
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Python virtual environments (ignore contents but keep folder structure)
+venv/
+env/
+ENV/
+.Python
+backend/venv/
+backend/env/
+backend/ENV/
+
+# Pre-downloaded Python packages (ignore contents)
+backend/wheelhouse/*.whl
+backend/wheelhouse/*.tar.gz
+
+# Portable Python runtime (ignore contents - 2.3GB)
+python/*
+!python/.gitkeep
+
+# ----------------------------------------
+# Node.js & Frontend
+# ----------------------------------------
+node_modules/
+frontend/node_modules/
+
+# Node.js portable runtime (ignore contents - 100MB)
+node/*
+!node/.gitkeep
+
+# Node.js logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package locks (keep package-lock.json, ignore others)
+bun.lockb
+
+# Frontend build outputs
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# ----------------------------------------
+# AI Models & Data (Large Files)
+# ----------------------------------------
+# Vector database (ignore DB files but keep folder - 1.1GB)
+backend/ncert_chromadb/*.sqlite3
+backend/ncert_chromadb/*.db
+backend/ncert_chromadb/**/
+!backend/ncert_chromadb/.gitkeep
+
+# Embedding models (ignore model files but keep folder - 67MB)
+backend/embeddings/**/*
+!backend/embeddings/.gitkeep
+
+# LLM models (ignore model files but keep folder - 1.66GB GGUF)
+backend/models/**/*
+!backend/models/.gitkeep
+!backend/models/phi2/.gitkeep
+
+# ----------------------------------------
+# Logs & Runtime Files
+# ----------------------------------------
+*.log
+logs/
+backend/logs/
+autorun/launcher.log
+autorun/*.log
+
+# ----------------------------------------
+# Environment & Configuration
+# ----------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ----------------------------------------
+# IDEs and Editors
+# ----------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.vscode-test/
+
+# ----------------------------------------
+# Operating System Files
+# ----------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ----------------------------------------
+# Testing & Coverage
+# ----------------------------------------
+htmlcov/
+.coverage
+.coverage.*
+coverage/
+*.cover
+.pytest_cache/
+.tox/
+.nyc_output/
+
+# ----------------------------------------
+# Temporary & Cache Files
+# ----------------------------------------
+*.tmp
+*.temp
+tmp/
+temp/
+*.cache
+.cache/
+
+# ----------------------------------------
+# Build & Deployment Artifacts
+# ----------------------------------------
+usb_deploy/
+*.zip
+*.tar.gz
+*.rar
+
+# Desktop shortcuts (created by installer)
+*.lnk
+
+# ----------------------------------------
+# Sensitive Data (if any)
+# ----------------------------------------
+secrets/
+*.key
+*.pem
+*.cert
+credentials.json
+node/
+
+# Autorun (if needed for deployment, comment out)
+# autorun.inf
+
+# Config files with sensitive data (if any)
+backend/config.yaml
+

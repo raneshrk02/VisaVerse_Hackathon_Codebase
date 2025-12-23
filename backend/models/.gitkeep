@@ -1,0 +1,2 @@
+# This file preserves the models/ directory structure in git
+# Large language models are stored in subdirectories but ignored by git

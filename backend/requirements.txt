@@ -1,0 +1,48 @@
+# FastAPI and web framework dependencies
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+aiofiles>=23.2.1
+
+# gRPC dependencies
+grpcio>=1.59.0
+grpcio-tools>=1.59.0
+grpcio-reflection>=1.59.0
+
+# Database and vector store
+chromadb==0.5.23
+sentence-transformers>=2.2.2
+
+# LLM dependencies  
+transformers>=4.35.2
+torch>=2.1.1
+
+# Core dependencies
+numpy==1.26.4
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+
+# Logging and monitoring
+structlog>=23.2.0
+prometheus-client>=0.19.0
+
+# Security
+cryptography
+bcrypt>=4.1.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+
+# Additional utilities
+colorama>=0.4.6
+rich>=13.7.0
+tenacity>=8.2.0
+asyncio-mqtt>=0.16.0
