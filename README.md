@@ -1,4 +1,4 @@
-# Self-Contained AI for Global Education
+# Smart AI for Generative Education
 
 **Bridging the Global Digital Divide Through Portable, Offline Intelligence**
 
