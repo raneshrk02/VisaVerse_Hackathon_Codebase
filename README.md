@@ -74,7 +74,6 @@ SAGE transforms any standard computing device into an AI-powered documentation h
 
 SAGE addresses this challenge area through enterprise-grade RAG architecture:
 
-- **Retrieval-Augmented Generation over Structured Documents**: SAGE implements enterprise-grade RAG architecture for intelligent question answering over documentation
 - **Offline Documentation Access**: Teams can access AI-powered documentation assistance without internet connectivity—critical for field operations, international deployments, and restricted environments
 - **Privacy-Preserving Knowledge Base**: All document processing, embedding generation, and query responses occur locally—ideal for confidential documentation, proprietary training materials, and regulated industries
 - **Source Attribution and Verification**: Every AI response includes citations to source documents, ensuring accountability and enabling users to verify information
@@ -329,14 +328,6 @@ Preprocessed Chunks → Sentence Transformer → 384-dim Dense Vectors → Chrom
 User Query → Frontend → JWT Validation → FastAPI Endpoint → RAG Orchestrator
 ```
 
-**Security Layer:**
-Even in a localhost environment, SAGE implements JWT (JSON Web Token) authentication to demonstrate enterprise-grade security practices:
-
-- **Token generation**: FastAPI backend issues signed JWT tokens upon session initialization
-- **Token validation**: All query endpoints validate token signatures before processing
-- **Session management**: Tokens expire after configurable timeout, requiring re-authentication
-- **Rationale**: Demonstrates security-first design principles applicable when deploying SAGE in semi-public environments (libraries, community centers, schools)
-
 ### Phase 2: Query Embedding and Preprocessing
 
 ```
@@ -344,19 +335,9 @@ Raw Query → Preprocessing → Sentence Transformer → 384-dim Query Vector
 ```
 
 **Query Preprocessing Steps:**
-1. **Normalization**: 
-   - Lowercasing (for case-insensitive semantic matching)
-   - Unicode normalization
-   - Special character handling
-   
-2. **Query Expansion** (optional):
-   - Synonym injection for domain-specific terminology
-   - Spelling correction for improved recall
-   
-3. **Embedding Generation**:
-   - Same `paraphrase-MiniLM-L3-v2` model used for document embeddings
-   - Ensures query and document vectors exist in identical semantic space
-   - GPU acceleration if available, CPU fallback for portability
+1. Normalization (lowercasing, Unicode normalization, special character handling)
+2. Query expansion (optional synonym injection and spelling correction)
+3. Embedding generation using `paraphrase-MiniLM-L3-v2` model
 
 ### Phase 3: Semantic Search and Retrieval
 
@@ -381,31 +362,15 @@ Query Vector → Cosine Similarity Computation → Top-K Retrieval → Reranking
 
 **Reranking Pipeline:**
 
-After initial Top-K retrieval, a reranking stage refines results:
-
-1. **Cross-encoder rescoring**: 
-   - Evaluates query-document relevance with higher precision than initial vector similarity
-   - Reorders Top-K results to prioritize most contextually appropriate chunks
-   
-2. **Metadata-based boosting**:
-   - FORMULA chunks boosted for mathematical queries
-   - DIAGRAM chunks prioritized for visual/conceptual questions
-   - TABLE chunks elevated for data comparison queries
-
-3. **Diversity filtering**:
-   - Ensures retrieved chunks come from varied pages/sections
-   - Prevents redundant information from adjacent chunks
-   - Maximizes contextual breadth within token budget
+1. Cross-encoder rescoring for improved relevance
+2. Metadata-based boosting (FORMULA/DIAGRAM/TABLE prioritization)
+3. Diversity filtering to prevent redundancy
 
 ### Phase 4: Prompt Engineering and Context Injection
 
 ```
 Retrieved Contexts + User Query → Prompt Template → Structured LLM Input
 ```
-
-**Prompt Construction:**
-
-SAGE employs carefully engineered prompts that guide Phi-2 toward accurate, grounded responses:
 
 **Token Budget Management:**
 - Maximum context window: 2048 tokens (Phi-2 limit)
@@ -429,41 +394,13 @@ Structured Prompt → Phi-2 LLM (GGUF) → Streaming Response Generation → Fro
 - **Context window**: 2048 tokens
 - **Vocabulary size**: 51,200 tokens
 
-**Streaming Response Architecture:**
-
-SAGE implements streaming responses for improved user experience:
-
-1. **Backend streaming**: 
-   - Phi-2 generates tokens incrementally
-   - Each token yielded as soon as computed (reduces perceived latency)
-   
-2. **WebSocket transmission**:
-   - FastAPI streams tokens to frontend via WebSocket connection
-   - Enables real-time display as LLM "thinks"
-   
-3. **Frontend rendering**:
-   - React components update incrementally with each token
-   - Users see responses forming in real-time (ChatGPT-style UX)
+**Streaming Response:**
+SAGE implements streaming responses via WebSocket for real-time token-by-token display (ChatGPT-style UX).
 
 **Hallucination Mitigation:**
-
-- **Context grounding**: System prompt explicitly instructs Phi-2 to answer only from provided context
-- **Low temperature**: Temperature=0.3 reduces creative embellishment
-- **Source attribution**: Responses include citations to source documents for verification
-- **Confidence scoring**: Future enhancement to flag low-confidence responses
-
-### Phase 6: Source Attribution and Response Packaging
-
-```
-Generated Answer + Retrieved Metadata → Response JSON → Frontend Display
-```
-
-**Frontend Display Features:**
-
-- **Expandable sources**: Users can click to view full retrieved context
-- **Page references**: Direct citations to textbook pages for verification
-- **Content type badges**: Visual indicators (TEXT/DIAGRAM/TABLE/FORMULA) for source types
-- **Relevance scores**: Transparency into retrieval confidence
+- Context grounding with explicit prompts
+- Low temperature (0.3) for factual accuracy
+- Source attribution for verification
 
 ---
 
