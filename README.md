@@ -1,4 +1,4 @@
-# SAGE: Self-Contained AI for Global Education
+# Smart AI for Generative Education
 
 **A portable, offline AI documentation and knowledge assistant that enables people to learn, onboard, and access critical information across borders without relying on continuous internet connectivity.**
 
@@ -10,7 +10,7 @@
 
 ## System Demonstration
 
-**[Video Documentation: Technical Implementation and Use Cases](https://youtu.be/your-demo-video-id)**
+**[Video Documentation: Technical Implementation and Use Cases](https://youtu.be/UCpClljGuDQ)**
 
 ---
 
@@ -48,7 +48,7 @@ In an increasingly interconnected world, access to intelligent documentation and
 
 This technological dependency perpetuates inequality, where those who would benefit most from AI-powered documentation support—migrant workers, international students, field teams, and communities in developing regions—are systematically excluded by infrastructure constraints beyond their control.
 
-## Solution: SAGE (Self-Contained AI for Global Education)
+## Solution: SAGE (Smart AI for Generative Education)
 
 SAGE is a **mobility-enabling knowledge companion** that delivers enterprise-grade AI-powered documentation support without internet dependency. As a completely portable, USB-based offline AI assistant, SAGE enables workers, students, and teams to carry intelligent knowledge bases across borders and access critical information anywhere, regardless of connectivity constraints.
 
@@ -623,8 +623,8 @@ We welcome contributions in:
 
 **Development Setup:**
 ```bash
-git clone https://github.com/raneshrk02/VisaVerse_Submission.git
-cd VisaVerse_Submission
+git clone https://github.com/raneshrk02/VisaVerse_Hackathon_Codebase.git
+cd VisaVerse_Hackathon_Codebase
 # Backend: cd backend && pip install -r requirements.txt && python main.py
 # Frontend: cd frontend && npm install && npm run dev
 ```
@@ -662,4 +662,4 @@ In a world where AI increasingly drives opportunity, SAGE ensures connectivity i
 
 ---
 
-*"The best AI works when you need it most—even when the world is disconnected."*
+*"The best AI works when you need it most-even when the world is disconnected."*
