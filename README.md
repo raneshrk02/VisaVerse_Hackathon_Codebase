@@ -1,6 +1,6 @@
-# Self-Contained AI for Global Education
+# SAGE: Self-Contained AI for Global Education
 
-**Bridging the Global Digital Divide Through Portable, Offline Intelligence**
+**A portable, offline AI documentation and knowledge assistant that enables people to learn, onboard, and access critical information across borders without relying on continuous internet connectivity.**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.13-blue.svg)
@@ -27,71 +27,91 @@ That's it! Your browser will open automatically with the AI assistant ready to u
 
 ---
 
-## Problem Statement: The Global Digital Divide
+## Problem Statement: Breaking Barriers to Global Knowledge Access
 
-In an era where artificial intelligence drives educational advancement and knowledge access, over 2.6 billion people remain disconnected from these transformative technologies due to unreliable or nonexistent internet infrastructure. This digital chasm disproportionately marginalizes:
+In an increasingly interconnected world, access to intelligent documentation and knowledge systems remains a critical barrier for billions of people navigating global mobility, international work, and cross-border education. The challenges are multifaceted:
 
-- **Remote and rural communities** where connectivity infrastructure remains economically unfeasible
-- **Developing regions** plagued by intermittent, expensive, or censored internet access
-- **Educational institutions** in low-resource settings lacking cloud service budgets
-- **Mobile professionals and students** traversing international borders requiring consistent AI assistance
-- **Crisis-affected zones** where disasters have disrupted telecommunications infrastructure
+**Global Mobility Barriers:**
+- **Students relocating across regions** lack consistent access to educational resources and AI-powered learning assistance during transitions
+- **Migrant learners and trainees** in low-connectivity environments cannot access critical onboarding materials and training documentation
+- **Individuals preparing for education or work transitions** face unreliable internet access that disrupts their preparation and skill development
 
-Contemporary AI solutions impose a hard dependency on continuous cloud connectivity, rendering them functionally inaccessible to billions. This technological prerequisite perpetuates a self-reinforcing cycle of educational and economic inequality, where those who would benefit most from AI assistance are systematically excluded by infrastructure limitations beyond their control.
+**International Workforce Challenges:**
+- **Field workers and remote teams** operating in cross-border contexts lack offline access to training materials and documentation
+- **Organizations deploying staff internationally** struggle with knowledge transfer when cloud access is restricted or costly
+- **Remote site operations** require AI-powered documentation support without stable internet infrastructure
+
+**Documentation Access Inequality:**
+- Contemporary AI documentation systems impose hard dependencies on continuous cloud connectivity
+- Over 2.6 billion people remain excluded from AI-powered knowledge assistance due to infrastructure limitations
+- Privacy-conscious organizations cannot use cloud-based AI for sensitive documentation and training materials
+
+This technological dependency perpetuates inequality, where those who would benefit most from AI-powered documentation support—migrant workers, international students, field teams, and communities in developing regions—are systematically excluded by infrastructure constraints beyond their control.
 
 ## Solution: SAGE (Self-Contained AI for Global Education)
 
-SAGE represents a paradigmatic departure from cloud-centric AI architectures, delivering a completely portable, USB-based offline AI assistant that democratizes access to advanced language models and intelligent knowledge retrieval. By architecting a fully self-contained Retrieval-Augmented Generation (RAG) pipeline with local LLM inference, SAGE eliminates internet dependency while preserving the sophistication of modern AI systems.
+SAGE is a **mobility-enabling knowledge companion** that delivers enterprise-grade AI-powered documentation support without internet dependency. As a completely portable, USB-based offline AI assistant, SAGE enables workers, students, and teams to carry intelligent knowledge bases across borders and access critical information anywhere, regardless of connectivity constraints.
+
+By architecting a fully self-contained Retrieval-Augmented Generation (RAG) pipeline with local LLM inference, SAGE eliminates cloud dependency while preserving the sophistication of modern AI documentation systems—making it ideal for international workforce onboarding, cross-border education, and privacy-preserving knowledge access.
 
 **Core Capabilities:**
 
-- **Complete offline operation** with zero external service dependencies
-- **USB portability** enabling plug-and-play deployment across Windows, macOS, and Linux platforms
-- **Data sovereignty** through exclusively local processing—no cloud transmission
-- **Domain-agnostic architecture** supporting educational, medical, legal, or custom knowledge bases
-- **Multimodal knowledge ingestion** processing text, diagrams, tables, and mathematical formulas
-- **Intelligent retrieval** with semantic search, reranking, and source attribution
+- **AI-Powered Documentation Support**: Advanced question answering over local knowledge bases with semantic search, intelligent reranking, and source attribution
+- **Complete Offline Operation**: Zero external service dependencies—works in air-gapped environments, remote sites, and during international travel
+- **Cross-Border USB Portability**: Plug-and-play deployment across Windows, macOS, and Linux platforms enables instant knowledge transfer across regions
+- **Privacy-Preserving Architecture**: Exclusively local processing ensures data sovereignty—no cloud transmission, no telemetry, no usage tracking
+- **Workforce Enablement**: Functions as an offline onboarding assistant, training companion, and knowledge base for field workers and remote teams
+- **Domain-Agnostic Design**: Supports educational, medical, legal, technical documentation, or any custom knowledge base
+- **Multimodal Understanding**: Processes text, diagrams, tables, and mathematical formulas for comprehensive documentation coverage
 
-SAGE transforms any standard computing device into an AI-powered knowledge hub, ensuring that advanced AI assistance reaches underserved populations regardless of connectivity constraints or economic barriers.
+SAGE transforms any standard computing device into an AI-powered documentation hub, ensuring that teams share the same AI-accessible knowledge regardless of connectivity—enabling true borderless collaboration through knowledge portability.
 
+---
 
-## Relevance to Global Mobility and Accessibility
+## Alignment with VisaVerse Challenge Focus Areas
 
-### Borderless Knowledge Infrastructure
+### 1. AI-Powered Documentation Support
 
-SAGE fundamentally reimagines AI access by decoupling intelligence from infrastructure. The system's USB-based architecture enables:
+SAGE addresses this challenge area through enterprise-grade RAG architecture:
 
-- **Physical knowledge transfer** across international borders without data roaming, customs declarations, or regulatory scrutiny
-- **Educational parity** where students in disconnected rural villages access identical AI capabilities as their counterparts in connected urban centers
-- **Professional mobility** for educators, healthcare workers, and field researchers carrying specialized knowledge bases to remote deployment sites
-- **Institutional independence** from commercial cloud providers and their associated geographic restrictions or service interruptions
+- **Retrieval-Augmented Generation over Structured Documents**: SAGE implements enterprise-grade RAG architecture for intelligent question answering over documentation
+- **Offline Documentation Access**: Teams can access AI-powered documentation assistance without internet connectivity—critical for field operations, international deployments, and restricted environments
+- **Privacy-Preserving Knowledge Base**: All document processing, embedding generation, and query responses occur locally—ideal for confidential documentation, proprietary training materials, and regulated industries
+- **Source Attribution and Verification**: Every AI response includes citations to source documents, ensuring accountability and enabling users to verify information
+- **Semantic Search with Reranking**: Advanced retrieval algorithms understand context and intent, delivering more accurate documentation answers than keyword search
 
-### Data Sovereignty and Privacy Architecture
+**Use Cases:**
+- Technical documentation for distributed international teams
+- Compliance and regulatory documentation in privacy-sensitive sectors
+- Training and onboarding materials for remote workforce deployment
+- Medical protocols and guidelines for field healthcare workers
+- Legal document analysis in air-gapped or confidential settings
 
-The system's entirely local processing model delivers unprecedented privacy guarantees:
+### 2. Global Mobility
 
-- **Zero external transmission**: All queries, embeddings, and responses computed locally—no network calls, no telemetry, no usage tracking
-- **Air-gapped deployment**: Operates on completely isolated systems, meeting requirements for classified, sensitive, or regulated environments
-- **Cultural and linguistic customization**: Knowledge bases can incorporate region-specific content without cloud provider constraints or content policies
-- **Regulatory compliance**: Satisfies strict data residency requirements for education, healthcare, and government sectors in sovereignty-conscious jurisdictions
+SAGE enables portable, offline access to structured knowledge for individuals in transition:
 
-### Economic Accessibility Model
+- **Student Mobility**: Students relocating across regions can carry complete educational curricula and AI tutoring assistance on a USB drive, ensuring continuity during transitions
+- **Migrant Learners**: Individuals in low-connectivity environments access training materials and skill development resources without internet dependency
+- **Education-to-Work Transitions**: Job seekers and career transitioners prepare using AI-powered documentation of industry standards, certifications, and technical knowledge
+- **Knowledge Portability**: Physical knowledge transfer across international borders without data roaming costs, customs complexity, or cloud service geographic restrictions
 
-SAGE's architecture eliminates the ongoing costs inherent to cloud-based AI services:
+SAGE delivers AI assistance as a portable companion rather than a fixed cloud service, enabling learning and skill development to continue seamlessly across geographic boundaries.
 
-- **Zero recurring fees**: No API metering, no subscription costs, no per-query charges after initial deployment
-- **Minimal hardware requirements**: Runs on modest consumer hardware (8GB RAM minimum), avoiding specialized or expensive infrastructure
-- **Community sharing model**: Single USB deployment can serve entire schools, clinics, or community centers
-- **Offline update mechanism**: Knowledge base updates distributed via USB transfer rather than bandwidth-intensive downloads
+### 3. International Workforce Tools
 
-### Cross-Border Portability
+SAGE functions as workforce enablement infrastructure for distributed teams:
 
-The system's design explicitly addresses international mobility scenarios:
+- **Offline Onboarding Assistant**: New hires in international locations can complete onboarding using AI-guided company documentation without VPN or cloud access requirements
+- **Field Worker Knowledge Base**: Construction, engineering, energy, and logistics teams in remote sites access technical documentation, safety protocols, and troubleshooting guides offline
+- **Cross-Border Team Knowledge Sharing**: Organizations ensure distributed teams have identical AI-accessible documentation regardless of local internet infrastructure
+- **USB-Deployable Training**: Companies can distribute standardized training materials and AI assistants via USB to regional offices, avoiding bandwidth costs and connectivity issues
 
-- **Platform-agnostic operation**: Runs identically on Windows, macOS, and Linux without reconfiguration
-- **No installation barriers**: Automated setup scripts handle dependency resolution and configuration
-- **Persistent storage**: All models, embeddings, and vector databases stored on portable media
-- **Instant deployment**: Plug-and-play operation within minutes on any compatible system
+**Deployment Scenarios:**
+- Energy sector: Equipment manuals and safety procedures for offshore/remote installations
+- Healthcare: Medical protocols and drug information for international medical missions
+- Manufacturing: Quality standards and technical specifications for multinational supply chains
+- Consulting: Client documentation and industry research for field consultants
 
 ---
 
@@ -377,41 +397,6 @@ After initial Top-K retrieval, a reranking stage refines results:
    - Prevents redundant information from adjacent chunks
    - Maximizes contextual breadth within token budget
 
-**Retrieved Context Structure:**
-```json
-{
-  "retrieved_documents": [
-    {
-      "content": "The process of photosynthesis occurs in chloroplasts...",
-      "metadata": {
-        "source": "Class 10 - Science - Biology",
-        "page": 87,
-        "content_type": "TEXT",
-        "similarity_score": 0.89
-      }
-    },
-    {
-      "content": "[LaTeX] 6CO_2 + 6H_2O → C_6H_{12}O_6 + 6O_2",
-      "metadata": {
-        "source": "Class 10 - Science - Biology",
-        "page": 88,
-        "content_type": "FORMULA",
-        "similarity_score": 0.85
-      }
-    },
-    {
-      "content": "Diagram description: Chloroplast structure showing thylakoid stacks...",
-      "metadata": {
-        "source": "Class 10 - Science - Biology",
-        "page": 89,
-        "content_type": "DIAGRAM",
-        "similarity_score": 0.82
-      }
-    }
-  ]
-}
-```
-
 ### Phase 4: Prompt Engineering and Context Injection
 
 ```
@@ -421,26 +406,6 @@ Retrieved Contexts + User Query → Prompt Template → Structured LLM Input
 **Prompt Construction:**
 
 SAGE employs carefully engineered prompts that guide Phi-2 toward accurate, grounded responses:
-
-```python
-PROMPT_TEMPLATE = """
-You are an educational AI assistant with access to NCERT textbook knowledge.
-
-Context from textbooks:
-{context}
-
-User Question: {question}
-
-Instructions:
-- Answer based strictly on the provided context
-- If the context doesn't contain sufficient information, state this clearly
-- Cite specific sources when referencing information
-- For mathematical questions, show step-by-step workings
-- Use clear, educational language appropriate for students
-
-Answer:
-"""
-```
 
 **Token Budget Management:**
 - Maximum context window: 2048 tokens (Phi-2 limit)
@@ -463,20 +428,6 @@ Structured Prompt → Phi-2 LLM (GGUF) → Streaming Response Generation → Fro
 - **Quantization**: 4-bit or 8-bit quantization reduces memory footprint from ~11GB to ~5.5GB
 - **Context window**: 2048 tokens
 - **Vocabulary size**: 51,200 tokens
-
-**Inference Configuration:**
-
-```python
-generation_config = {
-    "temperature": 0.3,        # Low temperature for factual accuracy
-    "top_p": 0.9,              # Nucleus sampling for coherence
-    "top_k": 40,               # Limits vocabulary to most probable tokens
-    "max_new_tokens": 512,     # Maximum response length
-    "repetition_penalty": 1.2, # Discourages repetitive phrasing
-    "do_sample": True,         # Enables probabilistic generation
-    "stream": True             # Enables token-by-token streaming
-}
-```
 
 **Streaming Response Architecture:**
 
@@ -507,58 +458,12 @@ SAGE implements streaming responses for improved user experience:
 Generated Answer + Retrieved Metadata → Response JSON → Frontend Display
 ```
 
-**Response Structure:**
-```json
-{
-  "answer": "Photosynthesis is the process by which plants convert light energy...",
-  "sources": [
-    {
-      "text": "The process of photosynthesis occurs in chloroplasts...",
-      "source": "Class 10 - Science - Biology",
-      "page": 87,
-      "content_type": "TEXT",
-      "relevance_score": 0.89
-    },
-    {
-      "text": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
-      "source": "Class 10 - Science - Biology",
-      "page": 88,
-      "content_type": "FORMULA",
-      "relevance_score": 0.85
-    }
-  ],
-  "metadata": {
-    "query_time_ms": 2340,
-    "retrieval_time_ms": 450,
-    "generation_time_ms": 1890,
-    "collections_searched": ["class10"],
-    "total_chunks_considered": 3,
-    "cache_hit": false
-  },
-  "cache_hit": false
-}
-```
-
 **Frontend Display Features:**
 
 - **Expandable sources**: Users can click to view full retrieved context
 - **Page references**: Direct citations to textbook pages for verification
 - **Content type badges**: Visual indicators (TEXT/DIAGRAM/TABLE/FORMULA) for source types
 - **Relevance scores**: Transparency into retrieval confidence
-
-### Performance Optimizations
-
-**LRU Caching:**
-- Frequent queries cached using Least Recently Used (LRU) eviction policy
-- Cache key: Hash of (query text + selected collections)
-- Cache hit rate: ~30-40% for repetitive educational queries
-- Cache size limit: 1000 queries (~50MB memory)
-- Time saved on cache hit: ~2 seconds (bypasses embedding and generation)
-
-**Parallel Collection Search:**
-- When multi-collection mode active, searches execute concurrently using ThreadPoolExecutor
-- Speedup: ~3x for 3-collection searches vs. sequential
-- Memory overhead: Minimal (threads share embedding model)
 
 ---
 
@@ -610,23 +515,10 @@ SAGE/
 
 **Minimum Configuration:**
 - **CPU**: Dual-core processor (Intel i3/AMD Ryzen 3 or equivalent)
-- **RAM**: 8GB (6GB available for application)
+- **RAM**: 4GB (Only 3GB - ChromaDB database and GGUF model is loaded into RAM)
 - **Storage**: 8GB USB 3.0 drive (16GB recommended)
-- **OS**: Windows 10, macOS 11, Ubuntu 20.04 or newer
+- **OS**: Any Windows, macOS or Ubuntu 20.04
 - **Ports**: System must have ports 8080 (frontend) and 8001 (backend) available
-
-**Recommended Configuration:**
-- **CPU**: Quad-core processor (Intel i5/AMD Ryzen 5 or equivalent)
-- **RAM**: 16GB (smoother LLM inference and concurrent queries)
-- **Storage**: 32GB USB 3.1/3.2 drive (faster I/O)
-- **OS**: Windows 11, macOS 12+, Ubuntu 22.04+
-
-**Performance Benchmarks:**
-- **Query latency** (Minimum config): 3-5 seconds
-- **Query latency** (Recommended config): 2-3 seconds
-- **Concurrent users** (Minimum): 2-3
-- **Concurrent users** (Recommended): 5-10
-- **Cold start time**: 30-45 seconds (model loading)
 
 ---
 
@@ -679,11 +571,6 @@ npm run dev  # Frontend at http://localhost:8080
 
 ## Security and Privacy
 
-**JWT Authentication:**
-- Token-based session management (even in localhost) demonstrates production-ready security
-- All API endpoints validate JWT signatures before processing
-- Tokens expire after 24 hours (configurable)
-
 **Privacy Guarantees:**
 - Zero external network calls after model download
 - All processing happens locally on device
@@ -723,27 +610,6 @@ Emergency responders use SAGE when telecommunications infrastructure fails. Engi
 
 **Scenario 4: Remote Research Station**
 Scientists in polar regions deploy domain-specific SAGE (climate science papers, species databases). Eliminates expensive satellite bandwidth costs ($10-50/MB). Estimated savings: $5,000-10,000 per research season.
-
----
-
-## Future Roadmap
-
-**Near-Term (3-6 months):**
-- Voice interface (Whisper speech-to-text for hands-free operation)
-- Lightweight models (Phi-1.5 for <4GB RAM devices)
-- LaTeX formula rendering in frontend
-- Multilingual UI (Hindi, Spanish, French, Swahili)
-
-**Medium-Term (6-12 months):**
-- Mobile app (Android/iOS with smaller quantized models)
-- Peer-to-peer knowledge sharing via local mesh networks
-- Improved reranking with cross-encoder models
-
-**Long-Term (12+ months):**
-- Federated learning for privacy-preserving model improvement
-- Audio/video content indexing
-- Curriculum-aligned assessment and adaptive learning
-- Raspberry Pi optimization for solar-powered educational kiosks
 
 ---
 
