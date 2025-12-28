@@ -10,7 +10,7 @@
 
 ## System Demonstration
 
-**[Video Documentation: Technical Implementation and Use Cases](https://youtu.be/your-demo-video-id)**
+**[Video Documentation: Technical Implementation and Use Cases](https://youtu.be/UCpClljGuDQ)**
 
 ---
 
@@ -39,7 +39,7 @@ In an era where artificial intelligence drives educational advancement and knowl
 
 Contemporary AI solutions impose a hard dependency on continuous cloud connectivity, rendering them functionally inaccessible to billions. This technological prerequisite perpetuates a self-reinforcing cycle of educational and economic inequality, where those who would benefit most from AI assistance are systematically excluded by infrastructure limitations beyond their control.
 
-## Solution: SAGE (Self-Contained AI for Global Education)
+## Solution: SAGE (Smart AI for Generative Education)
 
 SAGE represents a paradigmatic departure from cloud-centric AI architectures, delivering a completely portable, USB-based offline AI assistant that democratizes access to advanced language models and intelligent knowledge retrieval. By architecting a fully self-contained Retrieval-Augmented Generation (RAG) pipeline with local LLM inference, SAGE eliminates internet dependency while preserving the sophistication of modern AI systems.
 
