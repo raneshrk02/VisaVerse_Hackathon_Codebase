@@ -595,6 +595,10 @@ In a world where AI increasingly drives opportunity, SAGE ensures connectivity i
 **Built for the VisaVerse AI Hackathon 2025**  
 *Demonstrating offline AI's potential to bridge divides and democratize intelligence*
 
+**Done by:**  
+Ranesh RK (raneshrk02@gmail.com)  
+Keerthivasan T (keerthi112004@gmail.com)
+
 **Acknowledgments:** Microsoft Research (Phi-2), Sentence Transformers Team, ChromaDB, NCERT, VisaVerse AI Hackathon
 
 ---
